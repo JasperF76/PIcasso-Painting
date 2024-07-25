@@ -1,5 +1,5 @@
 .circle {
-    /* position: relative; */
+    position: relative;
     height: 300px;
     width: 500px;
     background-color: green;
@@ -9,13 +9,18 @@
     margin-right: auto;
     margin-bottom: -10px;
   }
+
+  /* I'm not sure why, but the flex justify-content and align-items tags below had no effect here. It was the margin-right, margin-left commands that actually centered the images. */
+
   .trapezoid {
 	border-top: 50px solid rgb(2, 59, 2);
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	height: 0;
 	width: 125px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
@@ -24,7 +29,9 @@
     height: 300px;
     width: 125px;
     background-color: rgb(2, 59, 2);
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
